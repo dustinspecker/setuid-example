@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	file, err := os.Open("/etc/shadow")
+	file, err := os.Open("/etc/sudoers")
 	defer file.Close()
 	if err == nil {
 		fmt.Println("Yay! You're running as root!")
